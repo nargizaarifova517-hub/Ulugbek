@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulug'bek Arifov — Frontend dasturchi</title>
+  <meta name="description" content="Frontend dasturchi Ulug'bek Arifovning portfolio sayti">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish">☰</button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="profile">
+      <div class="avatar">AU</div>
+      <h1>Ulug'bek Arifov</h1>
+      <p>Frontend dasturchi</p>
+    </div>
+    <nav>
+      <a href="#home" data-page="home"><svg viewBox="0 0 24 24">
+          <path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+        </svg>Bosh sahifa</a>
+      <a href="#about" data-page="about"><svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21a8 8 0 0 1 16 0" />
+        </svg>Men haqimda</a>
+      <a href="#resume" data-page="resume"><svg viewBox="0 0 24 24">
+          <path d="M6 3h9l4 4v14H6z" />
+          <path d="M9 12h7M9 16h7" />
+        </svg>Rezyume</a>
+      <a href="#portfolio" data-page="portfolio"><svg viewBox="0 0 24 24">
+          <rect x="3" y="7" width="18" height="13" rx="2" />
+          <path d="M9 7V4h6v3" />
+        </svg>Loyihalar</a>
+      <a href="#contact" data-page="contact"><svg viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>Aloqa</a>
+    </nav>
+    <div class="side-foot">
+      <button class="theme-btn" id="themeBtn">Tungi rejim</button>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="page" id="home">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="hello">Salom, mening ismim Ulug'bek 👋</p>
+          <h2></h2>
+          <p class="lead">Men Toshkentda yashovchi frontend dasturchiman. Foydalanuvchi birinchi urinishda tushunadigan
+            interfeyslar yarataman.</p>
+          <div class="actions">
+            <a class="btn primary" href="#portfolio">Loyihalarni ko'rish</a>
+            <a class="btn ghost" href="#contact">Menga yozing</a>
+          </div>
+        </div>
+        <div class="code-card" aria-hidden="true">
+          <div class="code-bar"><i></i><i></i><i></i><span>developer.js</span></div>
+          <pre id="typed"></pre>
+        </div>
+      </div>
+      <div class="stats">
+        <div><b data-count="10">0</b><span>oylik tajriba</span></div>
+        <div><b data-count="10">0</b><span>tugallangan loyiha</span></div>
+        <div><b data-count="1">0</b><span>mamnun mijoz</span></div>
+        <div><b data-count="1">0</b><span>sertifikat</span></div>
+      </div>
+      <h3 class="sub">Bilimlarim</h3>
+      <div class="chips">
+        <span>HTML5</span><span>CSS3
+        </span><span>JavaScript</span><span></span><span>React</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="about">
+      <header class="page-head">
+        <h2>Men haqimda</h2>
+        <p>Kod orqasidagi inson bilan tanishing.</p>
+      </header>
+      <div class="about-grid">
+        <div class="photo">AU</div>
+        <div>
+          <p class="big">Men dizayn va kod o'rtasidagi ko'prikni qurishni yaxshi ko'raman.</p>
+          <p>1 yildan beri startaplar va agentliklar uchun veb-ilovalar yarataman. Asosiy e'tiborim — tezlik, qulaylik
+            va toza kod. Har bir loyihada foydalanuvchi nima his qilishini birinchi o'ringa qo'yaman.</p>
+          <p>Bo'sh vaqtimda ochiq kodli loyihalarga hissa qo'shaman, yangi texnologiyalarni o'rganaman va yoshlarga
+            dasturlashni o'rgataman.</p>
+          <ul class="info">
+            <li><span>Ism</span>Ulug'bek Arifov</li>
+            <li><span>Yosh</span>17</li>
+            <li><span>Shahar</span>Toshkent, O'zbekiston</li>
+            <li><span>Email</span>ulugbekarifov776@gmail.com</li>
+            <li><span>Telefon</span>+998 99 191 52 33</li>
+            <li><span>Holat</span>Yangi loyihalarga ochiq</li>
+          </ul>
+          <a class="btn primary" href="#" id="cvBtn">CV yuklab olish</a>
+        </div>
+      </div>
+      <h3 class="sub">Men nima qilaman</h3>
+      <div class="cards three">
+        <article class="card">
+          <div class="ico">🎨</div>
+          <h4>UI dasturlash</h4>
+          <p>Figma maketlarini piksel aniqligida, responsiv saytga aylantiraman.</p>
+        </article>
+        <article class="card">
+          <div class="ico">⚡</div>
+          <h4>Tezlikni optimallashtirish</h4>
+          <p>Lighthouse ko'rsatkichlarini oshiraman, yuklanish vaqtini qisqartiraman.</p>
+        </article>
+        <article class="card">
+          <div class="ico">♿</div>
+          <h4>Qulaylik (a11y)</h4>
+          <p>Sayt hammaga, jumladan imkoniyati cheklangan odamlarga ham qulay bo'ladi.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="page" id="resume">
+      <header class="page-head">
+        <h2>Rezyume</h2>
+        <p>Ish tajribam, ta'limim va ko'nikmalarim.</p>
+      </header>
+      <div class="resume-grid">
+        <div>
+          <h3 class="sub">Ish tajribasi</h3>
+          <div class="timeline">
+            <div class="t-item"><time>2024 — hozir</time>
+              <h4>Senior Frontend dasturchi</h4><em>TechUz, Toshkent</em>
+              <p>Dizayn tizimi yaratdim va jamoani React bo'yicha o'qitdim. Sayt tezligi 40% oshdi.</p>
+            </div>
+            <div class="t-item"><time>2022 — 2024</time>
+              <h4>Frontend dasturchi</h4><em>Webstudio</em>
+              <p>6 dan ortiq mijoz uchun korporativ saytlar va onlayn do'konlar yaratdim.</p>
+            </div>
+            <div class="t-item"><time>2021 — 2022</time>
+              <h4>Junior dasturchi</h4><em>Freelance</em>
+              <p>Landing page va kichik biznes saytlarini ishlab chiqdim.</p>
+            </div>
+          </div>
+          <h3 class="sub">Ta'lim</h3>
+          <div class="timeline">
+            <div class="t-item"><time>2017 — 2021</time>
+              <h4>Bakalavr, Axborot texnologiyalari</h4><em>TATU</em>
+              <p>Dasturiy injiniring yo'nalishi.</p>
+            </div>
+            <div class="t-item"><time>2021</time>
+              <h4>Frontend kursi</h4><em>IT Park Academy</em>
+              <p>Zamonaviy JavaScript va React chuqurlashtirilgan kursi.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="sub">Ko'nikmalar</h3>
+          <div class="skills">
+            <div class="skill">
+              <div><span>HTML / CSS</span><b>95%</b></div><i><u style="--w:95%"></u></i>
+            </div>
+            <div class="skill">
+              <div><span>JavaScript</span><b>90%</b></div><i><u style="--w:90%"></u></i>
+            </div>
+            <div class="skill">
+              <div><span>React</span><b>85%</b></div><i><u style="--w:85%"></u></i>
+            </div>
+            <div class="skill">
+              <div><span>TypeScript</span><b>75%</b></div><i><u style="--w:75%"></u></i>
+            </div>
+            <div class="skill">
+              <div><span>Figma / UI dizayn</span><b>70%</b></div><i><u style="--w:70%"></u></i>
+            </div>
+          </div>
+          <h3 class="sub">Tillar</h3>
+          <div class="chips"><span>O'zbek — ona tili</span><span>Ingliz — B2</span><span>Rus — B1</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="page" id="portfolio">
+      <header class="page-head">
+        <h2>Loyihalar</h2>
+        <p>So'nggi ishlarimdan namunalar.</p>
+      </header>
+      <div class="filters" id="filters">
+        <button class="active" data-f="all">Hammasi</button>
+        <button data-f="web">Veb-sayt</button>
+        <button data-f="app">Ilova</button>
+        <button data-f="ui">UI dizayn</button>
+      </div>
+      <div class="cards grid" id="projects">
+        <article class="project" data-cat="web" style="--c1:#3d5afe;--c2:#7c4dff">
+          <div class="thumb"><span>BMW</span>
+            
+          </div>
+          <div class="body">
+            <h4>Vep-Sayt ilovasi</h4>
+            <p>Konfigurator, kredit kalkulyatori va bron qilish oqimi bilan to'liq avto-platforma.</p>
+            <div class="tags"><span>React</span><span>Stripe</span></div>
+          </div>
+        </article>
+        <article class="project" data-cat="app" style="--c1:#00bfa5;--c2:#1de9b6">
+          <div class="thumb"><span>Snickers</span></div>
+          <div class="body">
+            <h4>Vep-sayt ilovasi</h4>
+            <p>Savat, aksiya filtri va tezkor yetkazib berish oqimi bilan to'liq shirinliklar do'koni.</p>
+            <div class="tags"><span>Vue</span><span>PWA</span></div>
+          </div>
+        </article>
+        <article class="project" data-cat="ui" style="--c1:#ff6d00;--c2:#ffab40">
+          <div class="thumb"><span>kalkulyator</span></div>
+          <div class="body">
+            <h4>Vep-Sayt ilovasi</h4>
+            <p>Hisob-kitob tarixi, birliklar konvertori va ilmiy rejim bilan to'liq onlayn kalkulyator.</p>
+            <div class="tags"><span>Figma</span><span>UX</span></div>
+          </div>
+        </article>
+        <article class="project" data-cat="web" style="--c1:#d500f9;--c2:#ff4081">
+          <div class="thumb"><span>TESLA</span></div>
+          <div class="body">
+            <h4>Vep-Sayt</h4>
+            <p>Konfigurator, model filtri va bron qilish oqimi bilan to'liq avto-platforma.</p>
+            <div class="tags"><span>Next.js</span><span>MDX</span></div>
+          </div>
+        </article>
+        <article class="project" data-cat="app" style="--c1:#2962ff;--c2:#00b0ff">
+          <div class="thumb"><span>Weather</span></div>
+          <div class="body">
+            <h4>Ob-havo ilovasi</h4>
+            <p>Shahar bo'yicha qidiruv va 7 kunlik prognoz grafigi.</p>
+            <div class="tags"><span>JavaScript</span><span>API</span></div>
+          </div>
+        </article>
+        <article class="project" data-cat="web" style="--c1:#263238;--c2:#546e7a">
+          <div class="thumb"><span>BENTLE</span></div>
+          <div class="body">
+            <h4>Agentlik landing sahifasi</h4>
+            <p>Animatsiyali, 98 Lighthouse balli bilan yengil sayt.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>GSAP</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" id="contact">
+      <header class="page-head">
+        <h2>Aloqa</h2>
+        <p>Loyihangiz bormi? Birga ishlaymiz.</p>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="c-item">
+            <div class="ico">📍</div>
+            <div><span>Manzil</span>Toshkent, O'zbekiston</div>
+          </div>
+          <div class="c-item">
+            <div class="ico">✉️</div>
+            <div><span>Email</span>ulugbekarifov776@gmail.com</div>
+          </div>
+          <div class="c-item">
+            <div class="ico">📞</div>
+            <div><span>Telefon</span>+998 99 191 52 33</div>
+          </div>
+          <div class="c-item">
+            <div class="ico">🕘</div>
+            <div><span>Ish vaqti</span>Du–Ju, 09:00–18:00</div>
+          </div>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="row">
+            <label>Ismingiz<input type="text" name="name" required placeholder="Ismingizni kiriting"></label>
+            <label>Email<input type="email" name="email" required placeholder="nom@pochta.uz"></label>
+          </div>
+          <label>Mavzu<input type="text" name="subject" placeholder="Xabar mavzusi"></label>
+          <label>Xabar<textarea name="message" rows="5" required
+              placeholder="Loyihangiz haqida yozing..."></textarea></label>
+          <p class="msg" id="formMsg" role="status"></p>
+          <button class="btn primary" type="submit">Xabarni yuborish</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
